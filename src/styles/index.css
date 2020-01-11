@@ -33,3 +33,7 @@ ul {
 .van-nav-bar__text:active {
   background: transparent;
 }
+/* 骨架屏的间距样式 */
+.splic {
+  height: 20px;
+}
