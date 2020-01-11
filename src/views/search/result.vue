@@ -1,13 +1,14 @@
 <template>
-  <div>
-      搜索结果
+  <div class='container'>
+    <van-nav-bar title="搜索结果" left-arrow @click-left="$router.back()" />
+    结果搜索
   </div>
 </template>
 
 <script>
 export default {
+  name: 'search-result'
 }
 </script>
 
-<style lang="less" scoped>
-</style>
+<style scoped lang='less'></style>
