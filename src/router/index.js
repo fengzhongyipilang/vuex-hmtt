@@ -8,7 +8,7 @@ const Home = () => import('@/views/home') // 主页 二级
 const Question = () => import('@/views/question') // 问答 二级
 const Video = () => import('@/views/video') // 视频 二级
 const User = () => import('@/views/user')
-const UserProfile = () => import('@/views/user')
+const UserProfile = () => import('@/views/user/profile')
 const UserChat = () => import('@/views/user/chat') // 小智
 const Login = () => import('@/views/user/profile') // 编辑资料 一级
 const Search = () => import('@/views/search') // 搜索中心
