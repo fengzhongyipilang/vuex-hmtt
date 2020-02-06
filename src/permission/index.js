@@ -8,12 +8,12 @@ import store from '@/store'
 // from : 从哪里来
 // next（flase，地址） : 函数-必须next
 // next（）放行
-router.brforEach(function (to, from, next) {
+router.beforeEach(function (to, from, next) {
   if (to.path.startsWith('/user') && !store.state.user.token) {
     let toPath = {
       path: '/login',
       query: {
-        redirectURL: router.currentRoute.path // 携带当前的地址到登录页 登陆成功后跳回该页面
+        redirectUrl: router.currentRoute.path // 携带当前的地址到登录页 登陆成功后跳回该页面
       }
     }
     next(toPath)
